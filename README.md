@@ -17,7 +17,7 @@ build assets outside the node_modules folder
 ```
 
 
-## contain packages
+## containing packages
 
 ### vue
 - vue
