@@ -8,13 +8,14 @@ var presetpath = path.resolve('node_modules/babel-preset-env');
 //only available in .vue
 module.exports = {
     loaders: {
-        js:`${path.resolve('node_modules/babel-loader')}?presets=${presetpath}`
+        js:`${path.resolve('node_modules/babel-loader')}?presets=${presetpath}`,
+        less: ExtractTextPlugin.extract([`${path.resolve('node_modules/css-loader')}`, `${path.resolve('node_modules/less-loader')}`])
         
 
     },
 
 }
 
-// if (/production/.test(process.env.NODE_ENV)) {
-//     module.exports.postcss.push(cssnano())
-// }
+if (/production/.test(process.env.NODE_ENV)) {
+    module.exports.postcss.push(cssnano())
+}

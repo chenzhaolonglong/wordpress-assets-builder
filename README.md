@@ -1,5 +1,5 @@
 ## desc 
-build assets outside the node_modules folder
+build assets without installing packages again..
 
 
 ## usage
@@ -21,6 +21,7 @@ build assets outside the node_modules folder
 
 ### vue
 - vue
+- vuex
 - vue-router
 - iview
 - elements-ui
@@ -39,4 +40,6 @@ build assets outside the node_modules folder
 - animate.css
 - bootstrap4
 
-
+### externals
+- jquery ```jQuery```
+- env ```/pro/.test(process.env.NODE_ENV)?'"pro"':'"dev"'```
