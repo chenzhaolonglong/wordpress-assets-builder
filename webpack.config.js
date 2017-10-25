@@ -24,7 +24,7 @@ module.exports = {
                 test: /\.js$/, use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: [path.resolve('node_modules/babel-preset-env')],
+                        presets: [path.resolve('node_modules/babel-preset-env'),path.resolve('node_modules/babel-preset-stage-0')],
                     }
                 }, exclude: /node_modules/
             },

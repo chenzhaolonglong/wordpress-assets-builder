@@ -43,3 +43,7 @@ build assets without installing packages again..
 ### externals
 - jquery ```jQuery```
 - env ```/pro/.test(process.env.NODE_ENV)?'"pro"':'"dev"'```
+
+### babel
+- babel-preset-env
+- babel-preset-stage-0
